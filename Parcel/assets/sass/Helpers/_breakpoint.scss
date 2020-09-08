@@ -1,0 +1,22 @@
+$breakpoints: (small: 568px, medium: 768px, large: 1024px, huge: 1360px);
+
+@media screen and (min-width:35.5em) {
+  /*≥ 568px*/
+}
+
+@media screen and (min-width: 48em) {
+  /*≥ 768px*/
+}
+
+@media screen and (min-width:64em) {
+  /*≥ 1024px*/
+}
+
+@media screen and (min-width:80em) {
+  /*≥ 1280px*/
+}
+
+@media all and (-ms-high-contrast:none),
+(-ms-high-contrast:active) {
+  /*ie*/
+}

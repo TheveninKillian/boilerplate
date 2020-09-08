@@ -1,0 +1,65 @@
+{
+  "name": "name_project",
+  "version": "1.0.0",
+  "description": "",
+  "sideEffects": false,
+  "scripts": {
+    "lint:js": "eslint assets/**/*.js",
+    "lint:watch": "esw assets/**/*.js --watch",
+    "dev": "parcel public/index.html",
+    "dev:watch": "parcel watch public/index.html",
+    "prebuild": "rimraf build",
+    "build": "parcel build public/index.html --public-url ./ -d build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:staged": "jest --bail --findRelatedTests"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:js",
+      "npm run test:staged",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheveninKillian/Modern_project.git"
+  },
+  "keywords": [],
+  "author": "Killian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheveninKillian/Modern_project/issues"
+  },
+  "homepage": "",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "autoprefixer": "^9.8.6",
+    "babel-jest": "^26.3.0",
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^24.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-watch": "^7.0.0",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "lint-staged": "^10.3.0",
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^3.2.2",
+    "prettier": "2.1.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.10"
+  }
+}
