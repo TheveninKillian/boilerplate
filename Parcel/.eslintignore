@@ -1,11 +1,7 @@
-coverage
-
-dist
-
-build
-
-node_modules/*
-
+package-lock.json
 storybook-static
-
+build
 .cache
+coverage
+dist
+node_modules
