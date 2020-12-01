@@ -1,0 +1,17 @@
+body {
+  background-color: #000;
+
+  h1 {
+    display: flex;
+    color: #fff;
+  }
+
+  .title {
+    font-size: 1em;
+  }
+
+  img {
+    width: calc(558px / 2);
+    height: calc(270px / 2);
+  }
+}
