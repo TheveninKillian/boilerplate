@@ -44,6 +44,8 @@ export default defineConfig({
     Layouts(),
 
     VueI18n({
+      runtimeOnly: true,
+      compositionOnly: true,
       include: [path.resolve(__dirname, 'locales/**')],
     }),
   ],
