@@ -20,14 +20,14 @@ Ce boilerplate est tiré d'un déjà existant [Vitesse](https://github.com/antfu
 ## 2. installation des packages
 Créer les fichiers .eslinignore - .eslintrc - tsconfig.json - windi.config.ts  
 pnpm i -D @antfu/eslint-config @typescript-eslint/eslint-plugin cross-env eslint https-localhost sass  
-pnpm i -D vite-ssg @vue/server-renderer vite-plugin-windicss vite-plugin-components @iconify/json vite-plugin-icons  
+pnpm i -D vite-ssg @vue/server-renderer vite-plugin-windicss unplugin-vue-components @iconify/json unplugin-icons unplugin-auto-import
 pnpm i @vueuse/head @vueuse/core
 
 ## 3. Add
 ### Router
 Créer les dossiers **pages** avec le fichier **index.vue** et **layouts** avec le fichier **default.vue**  
 Changement du fichier "main.ts" -> vite-ssg  
-pnpm i -D vite-plugin-vue-layouts vite-plugin-pages  
+pnpm i -D vite-plugin-vue-layouts vite-plugin-pages vite-plugin-inspect
 pnpm i vue-router@4.0.10 ou >
 > vite.config.ts, main.ts, vite-env.d.ts
 
